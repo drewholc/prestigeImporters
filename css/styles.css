@@ -36,7 +36,7 @@
   background-image: url('../imgs/background.jpg');
   background-attachment: fixed;
   background-size: 100%;
-  border-radius: 0px !important;
+  border-radius: 0 !important;
   color: #FFFFFF;
   margin: 0 auto;
 }
@@ -47,7 +47,7 @@
 }
 
 /*===Body===*/
-.mid {
+.top-mid {
   height: 53em;
   background-image: url('../imgs/coffeebeans.png');
   background-size: cover;
@@ -55,4 +55,34 @@
 
 .centered {
   margin-top: 5em;
+  float: none;
+}
+
+.mid-mid {
+  height: 53em;
+  background-color: #282E3A;
+}
+
+.bottom-mid {
+  height: 53em;
+  background-image: url('../imgs/coffeebeans.png');
+  background-size: cover;
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}
+
+.box {
+  border: solid 50px brown;
+}
+
+.content {
+  margin-top: 5em;
+}
+
+.white {
+  color:white;
 }
