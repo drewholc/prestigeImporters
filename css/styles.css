@@ -1,0 +1,58 @@
+/*====Header====*/
+.navbar {
+  z-index: 30;
+  width:100%;
+}
+
+.navbar-default {
+  background-color: transparent;
+  border:none;
+}
+
+.navbar-header {
+  color: #cfccd1;
+  margin-top: 5px;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover, .navbar-nav>.active>a:after {
+  background-color: rgba(0, 0, 0, .5) !important;
+  color: #cfccd1;
+  font-size: 13px;
+  padding: 10px;
+}
+.navbar-default .navbar-nav>li>a {
+  color: #cfccd1;
+  font-size: 11px;
+  padding: 10px;
+}
+
+.logo {
+  height: 40px;
+  width: 60px;
+}
+
+.jumbotron {
+  height: 53em;
+  background-image: url('../imgs/background.jpg');
+  background-attachment: fixed;
+  background-size: 100%;
+  border-radius: 0px !important;
+  color: #FFFFFF;
+  margin: 0 auto;
+}
+
+.col-centered {
+  float:none;
+  margin-top: 10em;
+}
+
+/*===Body===*/
+.mid {
+  height: 53em;
+  background-image: url('../imgs/coffeebeans.png');
+  background-size: cover;
+}
+
+.centered {
+  margin-top: 5em;
+}
