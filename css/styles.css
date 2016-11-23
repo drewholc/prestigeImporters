@@ -34,10 +34,10 @@
 .jumbotron {
   height: 53em;
   background-image: url('../imgs/background.jpg');
-  background-attachment: fixed;
-  background-size: 100%;
+  background-attachment: fixed;;
+  background-size: cover;
+  background-position: center;
   border-radius: 0 !important;
-  color: #FFFFFF;
   margin: 0 auto;
 }
 
@@ -46,9 +46,12 @@
   margin-top: 10em;
 }
 
+.mainlogo {
+  height: 25em;
+}
+
 /*===Body===*/
 .top-mid {
-  height: 53em;
   background-image: url('../imgs/coffeebeans.png');
   background-size: cover;
 }
@@ -59,24 +62,16 @@
 }
 
 .mid-mid {
-  height: 53em;
-  background-color: #282E3A;
-}
-
-.bottom-mid {
-  height: 53em;
-  background-image: url('../imgs/coffeebeans.png');
+  background-image: url('../imgs/background.jpg');
+  background-attachment: fixed;;
   background-size: cover;
-  -moz-transform: scaleX(-1);
-  -o-transform: scaleX(-1);
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-  filter: FlipH;
-  -ms-filter: "FlipH";
+  background-position: center;
 }
 
 .box {
-  border: solid 50px brown;
+  border: solid 2em #36261E;
+  background-color: #36261E;
+  margin-bottom: 2em;
 }
 
 .content {
@@ -84,5 +79,93 @@
 }
 
 .white {
+  color:#cfccd1;
+}
+
+.table {
+  text-align: left;
+}
+
+.email, .email:hover {
   color:white;
+}
+
+
+.phoneNumber, .phoneNumber:hover, .phoneNumber:active, .phoneNumber:focus, .phoneNumber:visited{
+  color:white;
+  text-decoration: none;
+}
+
+.corpadd {
+  font-weight: bold;
+  margin-top: 1em;
+  margin-bottom: .2em;
+}
+
+.bottom {
+  margin-bottom: 2em;
+}
+
+/*====FOOTER======*/
+.footer {
+  background-color:#34241E;
+  height: 150px;
+  color:#A9A9AA;
+}
+
+.logo2 {
+  height:80px;
+  width:105px;
+  margin-left: 0;
+  border-right: 1px, solid, #2C2A2A;
+}
+
+.footer-image {
+  border-right: 1px solid #333;
+}
+
+.footer-cols {
+  padding-left: 40px;
+  padding-top: 10px;
+  font-size: 12px;
+}
+
+
+.footer a {
+  color: #A9A9AA;
+}
+
+.inner-footer {
+  padding-top: 25px;
+}
+
+.caption {
+  padding-top: 10px;
+  color: #3E3D3D;
+}
+
+.col-center {
+  margin-left: 30em;
+}
+
+.right {
+  text-align: right !important;
+}
+
+
+.modalImg {
+    left:-25%;
+    right: -25%;
+    position: absolute;
+}
+
+
+.modal-body {
+  position: relative;
+  padding: 0;
+  width: 898px;
+}
+
+.modal-conten {
+  width: 898px;
 }
