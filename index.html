@@ -9,6 +9,9 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/styles.css" />
 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
 </head>
 <body>
 
@@ -25,7 +28,7 @@
 			        <span class="icon-bar"></span>
 			        <span class="icon-bar"></span>
 			      </button>
-						<img src="imgs/logoSmall.png" alt="logo" class="logo"/>
+						<a href="#home"><img src="imgs/logoSmall.png" alt="logo" class="logo"/></a>
 			    </div>
 
 			    <!-- Collect the nav links, forms, and other content for toggling -->
@@ -33,7 +36,6 @@
 			      <ul class="nav navbar-nav navbar-right">
 			        <li class="active"><a href="#home">Home</a></li>
 							<li><a href="#products">Products</a></li>
-							<li><a href="#about">About</a></li>
 							<li><a href="#contact">Contact Us</a></li>
 			      </ul>
 			    </div><!-- /.navbar-collapse -->
@@ -42,7 +44,7 @@
 			<!--=====================END OF NAV BAR==========================-->
 			<div class="jumbotron text-center" id="home"> <!--========JUMBOTRON============-->
 				<div class="col-md-12 col-centered">
-					<img src="imgs/logo.png" alt="Prestige Importers Logo">
+					<img src="imgs/logo.png" alt="Prestige Importers Logo" class="img-responsive center-block mainlogo">
 	      </div>
 			</div> <!--========END OF JUMBOTRON============-->
 		</div><!--=====================END OF HEADER ROW===============================-->
@@ -52,15 +54,24 @@
 		<div class="row"><!--=====================BODY ROW===============================-->
 			<div class="col-md-12 top-mid text-center" id="products">
 					<a href="http://www.kimbo.it" target="_blank"><img class="centered" src="imgs/kimboLogo.jpg" alt="Prestige Importers Logo"></a>
-				<div class="row container content">
-					<div class="col-md-4">
-						<div class="box">
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit ad quisquam atque quaerat reiciendis repellat consequuntur, ut laborum fugiat magnam, nemo rem! Nostrum perspiciatis dicta, soluta fugit quam dolore odio!</p>
+				<div class="container">
+					<div class="row content">
+						<div class="col-md-3">
+							<div class="box">
+								<p class="white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit ad quisquam atque quaerat reiciendis repellat consequuntur, ut laborum fugiat magnam, nemo rem! Nostrum perspiciatis dicta, soluta fugit quam dolore odio!</p>
+								<button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#modal1">Home Product Line</button>
+							</div>
 						</div>
-					</div>
-					<div class="col-md-8">
-						<div class="box">
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, iste beatae odit quam voluptates aut qui facere animi molestiae, obcaecati blanditiis quasi possimus eveniet, expedita officia dolore earum corrupti omnis.</p>
+						<div class="col-md-6">
+							<div class="box">
+								<p class="white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, iste beatae odit quam voluptates aut qui facere animi molestiae, obcaecati blanditiis quasi possimus eveniet, expedita officia dolore earum corrupti omnis.</p>
+								<button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#modal2">Food Service Product Line</button>
+							</div>
+						</div>
+						<div class="col-md-2 bottom">
+							<div class="box">
+								<img src="imgs/kimboBlue.jpg" alt="Grams" class="img-responsive" />
+							</div>
 						</div>
 					</div>
 				</div>
@@ -68,52 +79,90 @@
 		</div><!--=====================END OF BODY ROW===============================-->
 
 		<div class="row"><!--=====================BODY ROW===============================-->
-			<div class="col-md-12 mid-mid text-center" id="about">
+			<div class="col-md-12 mid-mid text-center" id="contact">
 				<img class="centered" src="imgs/logo.png" alt="Prestige Importers Logo">
 				<div class="container">
-					<div class="row content text-center">
-						<div class="col-md-3">
-							<div class="box white">
-								<p>Retail/National Sales: Tony Gianni</p>
-								<p>Phone: 650.400.2522</p>
-								<p>Email: tgiannini@prestigeimporters.com</p>
-							</div>
-						</div>
-						<div class="col-md-3">
-							<div class="box white">
-								<p>Retail/National Sales: Tim Patendis</p>
-								<p>Phone: 559.352.6600</p>
-								<p>Email: tpatendis@prestigeimporters.com</p>
-							</div>
-						</div>
-						<div class="col-md-3">
-							<div class="box white">
-								<p>Retail/National Sales: Anthony Primavera</p>
-								<p>Phone: 559.287.2638</p>
-								<p>Email: aprimavera@prestigeimporters.com</p>
-							</div>
-						</div>
-						<div class="col-md-3">
-							<div class="box white">
-								<p>4776 E Jensen Ave
-									 Fresno, CA 93725
-									 PH#
-									 FAX# 559.457.1064
-								</p>
-							</div>
-						</div>
+					<div class="row col-md-10 col-md-offset-1"><!--table row-->
+						<table class="table content">
+							<thead class="white">
+								<tr>
+									<th>Department</th>
+									<th>Name</th>
+									<th>Phone Number</th>
+									<th>Email</th>
+								</tr>
+							</thead>
+								<tbody class="white">
+									<tr>
+										<td>Retail / National Sales</td>
+										<td>Tony Giannini</td>
+										<td><a href="tel:+1-650-400-2522" class="phoneNumber">650.400.2522</a></td>
+										<td><a href="mailto:tgiannini@prestigeimporters.com?" target="_top" class="email">tgiannini@prestigeimporters.com</a></td>
+									</tr>
+									<tr>
+										<td>FoodService / Distribution</td>
+										<td>Tim Patendis</td>
+										<td><a href="tel:+1-559-352-6600" class="phoneNumber">559.352.6600</a></td>
+										<td><a href="mailto:tpatendis@prestigeimporters.com?" target="_top" class="email">tpatendis@prestigeimporters.com</a></td>
+									</tr>
+									<tr>
+										<td>Regional & National Chain Accounts</td>
+										<td>Anthony Primavera</td>
+										<td><a href="tel:+1-559-287-2638" class="phoneNumber">559.287.2638</a></td>
+										<td><a href="mailto:aprimavera@prestigeimporters.com?" target="_top" class="email">aprimavera@prestigeimporters.com</a></td>
+									</tr>
+								</tbody>
+						</table><!--end of table row-->
 					</div>
 				</div>
-			</div>
-		</div><!--=====================END OF BODY ROW===============================-->
-
-
-		<div class="row"><!--=====================BODY ROW===============================-->
-			<div class="col-md-12 bottom-mid text-center" id="contact">
 			</div>
 		</div><!--=====================END OF BODY ROW===============================-->
 	</div><!--=====================END OF BODY CONTAINER===============================-->
 
+
+
+	<!--=========================FOOTER BEGINS======================================-->
+	<div class="container-fluid footer"><!-- footer container-fluid-->
+		<div class="row inner-footer"><!--footer row-->
+					<div class="col-md-3 col-md-offset-3 footer-image"> <!-- footer logo2-->
+						<img src="imgs/logoSmall.png" alt="Logo" class="logo2">
+					</div><!-- end of footer logo2-->
+
+					<div class="col-md-3 footer-cols center-block"> <!-- address-->
+						<div class="row">
+							<address class="right">
+								4776 E Jensen Ave<br />
+								Fresno, CA 93725<br />
+								FAX# 559.457.1064
+								</address>
+						</div>
+					</div><!-- end of address-->
+
+		</div><!--end of footer row-->
+		<div class="row text-center caption"> <!--caption row-->
+			<caption>&copy;Prestige Importers, LLC. All rights reserved</caption>
+		</div><!--end of caption row-->
+	</div><!--end of footer container-->
+
+	<!--==========================MODAL===================================-->
+	<div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog modal-lg" role="document">
+	    <div class="modal-content">
+	      <div class="modal-body">
+					<img src="imgs/homeproductline.jpg" alt="Home Product Line" class="modalImg center-block img-responsive" />
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog modal-lg" role="document">
+	    <div class="modal-content">
+	      <div class="modal-body">
+					<img src="imgs/foodserviceproductline.jpg" alt="Food Service Product Line" class="modalImg center-block img-responsive" />
+				</div>
+	    </div>
+	  </div>
+	</div>
 
 </body>
 </html>
