@@ -3,6 +3,7 @@
   z-index: 30;
   width:100%;
   font-family: 'Aref Ruqaa', serif;
+  font-size: 14px;
 }
 
 .navbar-default {
@@ -18,17 +19,15 @@
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-nav>.active>a:after {
   background-color: transparent !important;
   color: #cfccd1;
-  font-size: 13px;
   padding: 10px;
 }
 .navbar-default .navbar-nav>li>a {
   color: #cfccd1;
-  font-size: 11px;
   padding: 10px;
 }
 
 .logo {
-  height: 40px;
+  height: 55px;
   width: 60px;
 }
 
@@ -118,8 +117,8 @@
 }
 
 .logo2 {
-  height:80px;
-  width:105px;
+  height:90px;
+  width:90px;
   margin-left: 0;
   border-right: 1px, solid, #2C2A2A;
 }
